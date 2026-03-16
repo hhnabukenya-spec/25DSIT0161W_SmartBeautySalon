@@ -1,0 +1,156 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffafc;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #c2185b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ffdce8;
+}
+
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url('../images/salon-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #d4af37;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #b8932f;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-preview h2,
+.services h2 {
+    color: #c2185b;
+    margin-bottom: 20px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: white;
+    width: 250px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+img {
+    width:200px;
+    height:150px;
+    object-fit:cover;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+body{
+    background-color:#f7e6f0;
+    font-family:Arial,sans-serif;
+}
+form{
+    background-color:white;
+    padding:25px;
+    width:400px;
+    border-radius:10px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+}
+input,select{
+    width:100%;
+    padding:8px;
+    margin-bottom:15px;
+}
+input[type="submit"]{
+    background-color:#b30059;
+    color:whit;
+    border:none;
+    padding:10px;
+    border-radius:5px;
+    cursor:pointer;
+}
+input[type="submit"]:hover{
+    background-color:#800040;
+}
+h1{
+    color:#DAA520;
+    
+}
+h2,h3,h5,h4{
+    color:#DAA520;
+    
+}
+
