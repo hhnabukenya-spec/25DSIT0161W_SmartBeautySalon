@@ -1,4 +1,11 @@
 <?php
+session_start();
+
+if (!isset($_SESSION['admin'])) {
+    header("Location: login.php");
+    exit();
+}
+
 include "db_connect.php";
 
 $sql = "SELECT * FROM bookings";
@@ -16,7 +23,7 @@ $result = mysqli_query($conn, $sql);
 
 <h1>Salon Appointments</h1>
 
-<table border="1" cellpadding="10">
+<table border="1" cellpadding="15">
 <tr>
 <th>ID</th>
 <th>Full Name</th>
@@ -27,21 +34,31 @@ $result = mysqli_query($conn, $sql);
 </tr>
 
 <?php
-while($row = mysqli_fetch_assoc($result)){
-?>
-<tr>
-<td><?php echo $row['id']; ?></td>
-<td><?php echo $row['fullname']; ?></td>
-<td><?php echo $row['email']; ?></td>
-<td><?php echo $row['phone']; ?></td>
-<td><?php echo $row['service']; ?></td>
-<td><?php echo $row['appointment_date']; ?></td>
-</tr>
-<?php
+$count = 1;
+
+while($row = mysqli_fetch_assoc($result)) {
+    echo "<tr>
+        <td>".$count."</td>
+        <td>".$row['fullname']."</td>
+        <td>".$row['email']."</td>
+        <td>".$row['phone']."</td>
+        <td>".$row['service']."</td>
+        <td>".$row['appointment_date']."</td>
+    </tr>";
+    $count++;
+}
+
+for($i = $count; $i <= 10; $i++) {
+    echo "<tr>
+        <td>".$i."</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>";
 }
 ?>
-
-</table>
 
 </body>
 </html>
