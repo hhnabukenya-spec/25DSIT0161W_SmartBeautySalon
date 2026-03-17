@@ -39,5 +39,8 @@ http://localhost/smart-beauty-salon
 Admin Login Page:
 http://localhost/smart-beauty-salon/login.php
 
-Username:admin
-Password:admin123
+Username:
+admin
+
+Password:
+admin123
