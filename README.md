@@ -32,8 +32,15 @@ http://localhost/smart-beauty-salon
 4. Run the project.
 
 ## System Access
+
 User Page:
 http://localhost/smart-beauty-salon
 
-Admin Page:
-http://localhost/smart-beauty-salon/admin.php
+Admin Login Page:
+http://localhost/smart-beauty-salon/login.php
+
+Username:
+admin
+
+Password:
+admin123
